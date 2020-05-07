@@ -769,10 +769,10 @@ class Gamma(BoostDistribution):
       @ In, None
       @ Out, None
     """
-    BoostDistribution.__init__(self)
-    self.low = 0.0
-    self.alpha = 0.0
-    self.beta = 1.0
+    BoostDistribution.__init__(self, low=0.0, alpha=0.0, beta=1.0)
+    self.low = low
+    self.alpha = alpha
+    self.beta = beta
     self.type = 'Gamma'
     self.disttype = 'Continuous'
     self.hasInfiniteBound = True
